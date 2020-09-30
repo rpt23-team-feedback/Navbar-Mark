@@ -39,4 +39,3 @@ const navbarSave = (data) => {
 module.exports = {
   navbarSave, Navbar
 }
-
