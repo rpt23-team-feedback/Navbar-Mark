@@ -4,7 +4,10 @@
   "description": "BundleNav for FEC",
   "main": "index.js",
   "scripts": {
-    "seed": "node database/index.js"
+    "seed": "node database/index.js",
+    "test": "jest --detectOpenHandles",
+    "server-dev": "nodemon server/index.jsx",
+    "react-dev": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,23 @@
   },
   "homepage": "https://github.com/theofficetroll/Navbar-Mark#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.6",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^26.5.2",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react-app": "^3.1.2",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^26.4.2",
+    "react-hot-loader": "^4.13.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
