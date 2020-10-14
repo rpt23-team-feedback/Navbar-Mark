@@ -6,7 +6,7 @@
   "scripts": {
     "seed": "node database/index.js",
     "test": "jest --detectOpenHandles",
-    "server-dev": "nodemon server/index.jsx",
+    "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch"
   },
   "repository": {

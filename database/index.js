@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const MongoDB = process.env.MONGODB_URI || 'mongodb://localhost/navbar';
 const Seed = require('./seed.js');
-mongoose.connect(MongoDB, { useMongoClient: true });
+mongoose.connect(MongoDB, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
@@ -11,8 +11,8 @@ db.on('error', function() {
 
 db.once('open', function() {
   console.log('mongoose connected successfully');
-  db.dropDatabase();
-  navbarSave(Seed.seedGen());
+  // db.dropDatabase();
+  // navbarSave(Seed.seedGen());
 });
 
 var navbarSchema = mongoose.Schema({
@@ -21,6 +21,17 @@ var navbarSchema = mongoose.Schema({
 });
 
 const Navbar = mongoose.model('Navbar', navbarSchema);
+
+const countdownRequest = (data) => {
+  let bundleId = data.bundleId;
+  return Navbar.findOne({ 'bundleId': bundleId })
+  .then(countdownData => {
+    return countdownData;
+  })
+  .catch(err => {
+    console.log('error', err);
+  })
+}
 
 const navbarSave = (data) => {
   let navbarData = data.map(data => {
@@ -37,5 +48,5 @@ const navbarSave = (data) => {
 };
 
 module.exports = {
-  navbarSave, Navbar
+  navbarSave, countdownRequest, Navbar
 }
