@@ -6,6 +6,8 @@
   "scripts": {
     "seed": "node database/index.js",
     "test": "jest --detectOpenHandles",
+    "start": "node server/index.js",
+    "build": "webpack --mode production",
     "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch"
   },

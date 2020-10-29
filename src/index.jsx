@@ -15,30 +15,7 @@ class Navbar extends React.Component {
         tier3: 10,
       }
     }
-    // this.getCountdownData = this.getCountdownData.bind(this);
   }
-
-  componentDidMount() {
-    // this.getCountdownData();
-  }
-
-  // getCountdownData() {
-  //   let bundleId = this.state.bundleId;
-  //   $.ajax({
-  //     method: 'GET',
-  //     url: '/countdown/' + bundleId,
-  //     datatype: 'json',
-  //     success: (data) => {
-  //       console.log('data received', data);
-  //       this.setState({
-  //         countdown: data.countDown,
-  //       })
-  //     },
-  //     error: (err) => {
-  //       console.log('err', err);
-  //     }
-  //   })
-  // }
 
   render() {
     return (
