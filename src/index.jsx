@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import $ from 'jquery';
 import './index.css';
 
 class Navbar extends React.Component {
@@ -15,34 +14,11 @@ class Navbar extends React.Component {
         tier3: 10,
       }
     }
-    // this.getCountdownData = this.getCountdownData.bind(this);
   }
-
-  componentDidMount() {
-    // this.getCountdownData();
-  }
-
-  // getCountdownData() {
-  //   let bundleId = this.state.bundleId;
-  //   $.ajax({
-  //     method: 'GET',
-  //     url: '/countdown/' + bundleId,
-  //     datatype: 'json',
-  //     success: (data) => {
-  //       console.log('data received', data);
-  //       this.setState({
-  //         countdown: data.countDown,
-  //       })
-  //     },
-  //     error: (err) => {
-  //       console.log('err', err);
-  //     }
-  //   })
-  // }
 
   render() {
     return (
-      <div id="Navbar" className="moving-navbar">
+      <div id="navbar" className="moving-navbar">
         <div id="bell" className="bell moving-navbar-button">
           B
         </div>
@@ -82,9 +58,9 @@ class Navbar extends React.Component {
             </div>
           </div>
         </div>
-        <div id="tier-cost tier1" className="cost moving-navbar-button no-style">Pay $1.00+</div>
-        <div id="tier-cost tier2" className="cost moving-navbar-button no-style">Pay $3.00+</div>
-        <div id="tier-cost tier3" className="cost moving-navbar-button no-style">Pay $10.00+</div>
+        <div id="tier1" className="cost moving-navbar-button no-style">Pay $1.00+</div>
+        <div id="tier2" className="cost moving-navbar-button no-style">Pay $3.00+</div>
+        <div id="tier3" className="cost moving-navbar-button no-style">Pay $10.00+</div>
         <div id="charity" className="moving-navbar-button no-style" >Charity</div>
         <div id="stats" className="moving-navbar-button no-style">Stats</div>
         <div id="pay-button" className="purchase-button button-green">Pay What You Want!</div>
