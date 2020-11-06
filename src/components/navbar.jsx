@@ -148,9 +148,9 @@ class Bundle extends React.Component {
             </div>
           </div>
         </div>
-        <div id="tier1" className="cost moving-navbar-button no-style">Pay ${this.state.tier1}.00+</div>
-        <div id="tier2" className="cost moving-navbar-button no-style">Pay ${this.state.tier2}.00+</div>
-        <div id="tier3" className="cost moving-navbar-button no-style">Pay ${this.state.tier3}.00+</div>
+        <div id="tier1" className="cost moving-navbar-button no-style">Pay ${this.state.tierCosts.tier1}.00+</div>
+        <div id="tier2" className="cost moving-navbar-button no-style">Pay ${this.state.tierCosts.tier2}.00+</div>
+        <div id="tier3" className="cost moving-navbar-button no-style">Pay ${this.state.tierCosts.tier3}.00+</div>
         <div id="charity" className="moving-navbar-button no-style" >Charity</div>
         <div id="stats" className="moving-navbar-button no-style">Stats</div>
         <div id="pay-button" className="purchase-button button-green">Pay What You Want!</div>
