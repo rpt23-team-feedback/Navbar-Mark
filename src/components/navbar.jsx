@@ -10,7 +10,7 @@ class Bundle extends React.Component {
     super(props);
     this.state = {
       bundleId: parseInt(this.props.match.params.bundleId),
-      countdown: 1050023,  // from Descriptions
+      countdown: 1050023,
       tierCosts: {
         tier1: 1,
         tier2: 3,
