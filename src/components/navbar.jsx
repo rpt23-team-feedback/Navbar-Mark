@@ -113,8 +113,8 @@ class Bundle extends React.Component {
           B
         </div>
         <div className="countdown-container moving-navbar-button">
-          <div id="countdown" className="days blocky-countdown">
-            <div className="days">
+          <div id="countdown">
+            <div className="days blocky-countdown">
               <div className="countdown-number">
                 {days}
               </div>
@@ -122,7 +122,7 @@ class Bundle extends React.Component {
                 days
               </div>
             </div>
-            <div className="hours">
+            <div className="hours blocky-countdown">
               <div className="countdown-number">
                 {hours}
               </div>
@@ -130,7 +130,7 @@ class Bundle extends React.Component {
                 hours
               </div>
             </div>
-            <div className="minutes">
+            <div className="minutes blocky-countdown">
               <div className="countdown-number">
                 {minutes}
               </div>
@@ -138,7 +138,7 @@ class Bundle extends React.Component {
                 min
               </div>
             </div>
-            <div className="seconds">
+            <div className="seconds blocky-countdown">
               <div className="countdown-number">
                 {seconds}
               </div>
